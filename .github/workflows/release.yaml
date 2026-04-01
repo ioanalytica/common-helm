@@ -27,7 +27,7 @@ jobs:
         id: package
         run: |
           helm package .
-          VERSION=$(grep '^version:' Chart.yaml | sed 's/version: *"\(.*\)"/\1/')
+          VERSION=$(grep '^version:' Chart.yaml | awk '{print $2}' | tr -d '"')
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           echo "file=common-${VERSION}.tgz" >> "$GITHUB_OUTPUT"
 
