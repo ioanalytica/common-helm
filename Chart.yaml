@@ -1,0 +1,30 @@
+# Copyright IO ANALYTICA. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: v2
+name: common
+version: 0.1.0
+appVersion: 0.1.0
+type: library
+
+description: >-
+  A library Helm chart for grouping common logic between IO ANALYTICA charts.
+  This chart is not deployable by itself.
+
+home: https://github.com/ioanalytica/common-helm
+sources:
+  - https://github.com/ioanalytica/common-helm
+
+maintainers:
+  - name: IO ANALYTICA
+    url: https://ioanalytica.com
+
+keywords:
+  - common
+  - helper
+  - template
+  - function
+
+annotations:
+  category: Infrastructure
+  licenses: Apache-2.0
